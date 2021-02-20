@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'azuresite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgreSQL',
-        'NAME': BASE_DIR / 'db.postgreSQL',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'xtankovic@fiit-dbs-xtankovic-db',
+        'PASSWORD': 'ComradeKefalin27',
+        'HOST': 'fiit-dbs-xtankovic-db.postgres.database.azure.com',
+        'PORT': '5432',
     }
 }
 

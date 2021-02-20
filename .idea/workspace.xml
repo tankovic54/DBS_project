@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0116622-1ec9-404b-8eea-f6c5b8ba3faf" name="Default Changelist" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/azuresite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuresite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/azuresite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuresite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613548162930</updated>
       <workItem from="1613803869230" duration="261000" />
+      <workItem from="1613804292665" duration="299000" />
     </task>
     <servers />
   </component>
