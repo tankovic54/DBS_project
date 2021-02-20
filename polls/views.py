@@ -3,6 +3,8 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.db import connection
+from django.http import HttpResponse
 
 from .models import Choice, Question
 
@@ -54,3 +56,22 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+
+
+query_text = "SELECT date_trunc('seconds', current_timestamp - pg_postmaster_start_time()) as uptime;"
+
+
+def points(request):
+    with connection.cursor() as cursor:
+        cursor.execute(query_text)
+        data = dictfetchall(cursor)
+
+    return HttpResponse(data)
+
+
+def dictfetchall(cursor):
+    columns = [col[0] for col in cursor.description]
+    return [
+        dict(zip(columns, row))
+        for row in cursor.fetchall()
+    ]
